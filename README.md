@@ -1,39 +1,40 @@
 # Data-analyst-vinuthna
-Project Description
-
-This project focuses on building a comprehensive Data Analytics Platform (DAP) for the City of Vancouver to analyze and visualize key urban datasets. The goal is to facilitate data-driven decision-making across various domains, such as cultural spaces, public art installations, city-owned assets, and street infrastructure. By employing descriptive and exploratory analyses, the project seeks to uncover trends, patterns, and actionable insights to support urban planning and resource optimization.
 
 Project Title: "Data Analytics for the City of Vancouver: Unlocking Urban Insights Using AWS Cloud Solutions"
 
+Objective
+The aim is to design and implement a Data Analytics Platform (DAP) to analyze and visualize the geographic distribution of VAHEF (Vancouver Affordable Housing Endowment Fund) properties. Specifically, this work focuses on:
+
+Identifying the count of properties in each neighborhood (Geo Local Area).
+Highlighting regions with more than 15 properties.
+Visualizing property concentration to support decision-making for resource allocation.
+
+
 Dataset
 
-The project utilizes diverse datasets related to urban planning and infrastructure:
+1) Source: Dataset includes details on properties owned by VAHEF, such as:
+Building Number: Unique identifier for each property.
+Geo Local Area: Indicates the neighborhood where the property is located.
+Other attributes (omitted in this analysis for relevance).
 
-1) Cultural Spaces:
-
-Type, ownership (private, government, non-profit), location, and square footage.
-Missing values in key columns like Square_Feet to be imputed during cleaning.
-
-2) Public Art Installations:
-
-Material used, year of installation, and neighborhood locations.
-Patterns in material preferences and installation trends.
-
-3) City-Owned Assets:
-
-Geographic locations and building counts in various neighborhoods.
-Ownership distribution across different city areas.
-
-4) One-Way Streets:
-
-Street types (arterial vs. non-arterial) and geospatial distributions.
-Usage analysis based on traffic and neighborhood access.
+2) Data Characteristics:
+Complete dataset with no missing values (as identified in the profiling step).
+Focus on Building Number and Geo Local Area for the analysis.
 
 Methodology
-The analysis follows a systematic approach leveraging AWS services and data analytics techniques:
+The analysis was conducted in four systematic steps: data ingestion, profiling, cleaning, and pipeline design.
 
-1) Data Ingestion:
 
-Datasets are uploaded to AWS S3 for storage and scalability.
-Raw and cleaned data are stored in separate buckets for clear organization.
+
+1. Data Ingestion
+
+Objective: Load raw data into AWS S3 for centralized storage and future processing.
+
+Steps:
+Created two S3 buckets:
+
+Raw Data Bucket: For unprocessed data.
+
+Transformed Data Bucket: For cleaned and structured data.
+
 
