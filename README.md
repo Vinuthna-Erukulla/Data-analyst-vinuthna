@@ -1,4 +1,4 @@
-# Data-analyst-vinuthna
+# Portfolio
 
 Project Title: "Data Analytics for the City of Vancouver: Unlocking Urban Insights Using AWS Cloud Solutions"
 
